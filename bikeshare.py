@@ -1,8 +1,10 @@
+#Load libraries
 import datetime as dt
 import time
 import pandas as pd
 import numpy as np
 
+#Include data files to be used and time period for filter in lists
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -93,9 +95,9 @@ def load_data(city, month, day):
      
 def view_raw_data(df):
     count=0
-    ans=input("Do you wish to see first 5 rows of the filtered data set? Type yes or no : ")
+    ans=input("Do you wish to see first 7 rows of the filtered data set? Type yes or no : ")
     if ans.lower()=="yes":
-        print(df.iloc[0:5])
+        print(df.iloc[0:7])
         while True:
             answer=input("Do you wish to see 5 more rows of the filtered data set? Type yes or no : ")
             if answer.lower()=="yes":
@@ -120,7 +122,7 @@ def view_raw_data(df):
 def time_stats(df,month,day):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nCalculating The Most Frequent Times of Travel...\n')
+    print('\nCalculating The Most Frequent Times of Travel.....\n')
     start_time = time.time()
 
     # display the most common month
