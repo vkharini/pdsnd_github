@@ -122,7 +122,7 @@ def view_raw_data(df):
 def time_stats(df,month,day):
     """Displays statistics on the most frequent times of travel."""
 
-    print('\nCalculating The Most Frequent Times of Travel...\n')
+    print('\nCalculating The Most Frequent Times of Travel.....\n')
     start_time = time.time()
 
     # display the most common month
