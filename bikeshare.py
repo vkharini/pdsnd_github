@@ -4,7 +4,7 @@ import time
 import pandas as pd
 import numpy as np
 
-
+#Include data files to be used and time period for filter in lists
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
