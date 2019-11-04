@@ -95,14 +95,14 @@ def load_data(city, month, day):
      
 def view_raw_data(df):
     count=0
-    ans=input("Do you wish to see first 5 rows of the filtered data set? Type yes or no : ")
+    ans=input("Do you wish to see first 7 rows of the filtered data set? Type yes or no : ")
     if ans.lower()=="yes":
-        print(df.iloc[0:5])
+        print(df.iloc[0:7])
         while True:
-            answer=input("Do you wish to see 5 more rows of the filtered data set? Type yes or no : ")
+            answer=input("Do you wish to see 7 more rows of the filtered data set? Type yes or no : ")
             if answer.lower()=="yes":
-                count+=5
-                print(df.iloc[count:count+5])
+                count+=7
+                print(df.iloc[count:count+7])
             elif answer.lower()=="no":
                 print("\nAlright!Proceeding to the next step.")
                 print("-"*40)
@@ -150,7 +150,7 @@ def time_stats(df,month,day):
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
-    print('\nCalculating The Most Popular Stations and Trip...\n')
+    print('\nCalculating The Most Popular Stations and Trip.....\n')
     start_time = time.time()
 
     # display most commonly used start station
