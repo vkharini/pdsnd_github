@@ -99,10 +99,10 @@ def view_raw_data(df):
     if ans.lower()=="yes":
         print(df.iloc[0:7])
         while True:
-            answer=input("Do you wish to see 5 more rows of the filtered data set? Type yes or no : ")
+            answer=input("Do you wish to see 7 more rows of the filtered data set? Type yes or no : ")
             if answer.lower()=="yes":
-                count+=5
-                print(df.iloc[count:count+5])
+                count+=7
+                print(df.iloc[count:count+7])
             elif answer.lower()=="no":
                 print("\nAlright!Proceeding to the next step.")
                 print("-"*40)
